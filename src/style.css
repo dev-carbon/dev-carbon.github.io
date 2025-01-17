@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Play';
+  }
+}
 
 @layer components {
   .section {
@@ -92,5 +100,29 @@
 
   .navbar-right {
     @apply flex items-center gap-6;
+  }
+}
+
+.hand-emoji {
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.shake {
+  animation: shake 0.7s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { 
+      transform: rotate(0deg) translateX(0);
+  }
+  25% { 
+      transform: rotate(15deg) translateX(5px);
+  }
+  50% { 
+      transform: rotate(-15deg) translateX(-5px);
+  }
+  75% { 
+      transform: rotate(10deg) translateX(3px);
   }
 }
