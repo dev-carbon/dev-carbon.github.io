@@ -134,7 +134,7 @@ const Projects = () => {
           <ProjectCard key={index} {...project} />
         ))}
 
-        <article className={`project__card col-span-4 bg-neutral-200/50 dark:bg-neutral-800/50`}>
+        <article className={`project__card col-span-full md:col-span-4 bg-neutral-200/50 dark:bg-neutral-800/50 py-8`}>
             <div className="flex items-center justify-center h-full">
                 <FolderPlus size={42} />
             </div>
