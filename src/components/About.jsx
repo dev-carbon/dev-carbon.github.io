@@ -37,13 +37,13 @@ const About = () => {
         <a
           href="/cv.pdf"
           download="CV_Hugues_Tchouala.pdf"
-          className="inline-flex items-center gap-1 border border-blue-600 px-4 py-1 rounded text-blue-600"
+          className="inline-flex items-center gap-1 border border-blue-600 px-4 py-1 rounded text-blue-600 text-lg"
         >
           <Download />
           Télécharger mon CV
         </a>
 
-        <h3 className="my-2 text-xl">
+        <h3 className="my-2 text-lg">
           Prendre contact 🚀
           <a
             href="mailto:hugues.tchouala42@gmail.com"
