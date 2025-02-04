@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: "Roboto", "Inter";
+  }
+}
+
+@layer components {
+  .section {
+    @apply flex flex-col justify-center min-h-[70vh] max-w-6xl mx-auto ps-10 md:px-12 py-24 my-16;
+  }
+
+  .section__title {
+    @apply bg-neutral-700 text-white px-3 py-2 self-start uppercase text-lg font-bold tracking-widest shadow;
+  }
+
+  .section__subtitle {
+    @apply bg-neutral-500 text-white px-3 ms-8 mb-8 self-start uppercase text-lg font-bold tracking-widest;
+  }
+
+  .section__content {
+    @apply flex flex-col gap-6 ps-6 pe-6 w-full mt-12 text-base;
+  }
+
+  .section__grid {
+    @apply grid grid-cols-12 gap-4;
+  }
+
+  .section__content p {
+    @apply font-light;
+  }
+
+  .skills__category {
+    @apply flex flex-col items-start col-span-6 lg:col-span-4 mb-8;
+  }
+
+  .skills__title {
+    @apply font-bold mb-6 tracking-normal text-sm md:text-base uppercase;
+  }
+
+  .project__card {
+    @apply flex flex-col border bg-neutral-200/10 dark:bg-neutral-950/10 border-neutral-200 dark:border-neutral-700 rounded-md px-4 py-4;
+  }
+
+  .project__card__header {
+    @apply flex flex-col gap-2 md:flex-row;
+  }
+
+  .project__title {
+    @apply flex gap-2 font-semibold mb-4 dark:text-neutral-500;
+  }
+
+  .project__date {
+    @apply flex items-center gap-2 text-sm;
+  }
+  .project__card__description {
+    @apply text-neutral-600 mb-6 text-sm;
+  }
+
+  .project__card__skills {
+    @apply mt-auto;
+  }
+
+  .skills__list {
+    @apply flex flex-col flex-wrap gap-4 font-light text-sm md:text-base w-full;
+  }
+
+  .skill__item {
+    @apply flex items-center gap-2 font-light text-sm;
+  }
+
+  .project__card__skills__list {
+    @apply flex flex-wrap gap-2;
+  }
+
+  .project__card__skill {
+    @apply text-blue-600 border border-blue-600 rounded px-2 py-1 text-xs md:text-sm;
+  }
+
+  .skill {
+    @apply flex w-full items-center gap-2;
+  }
+
+  .experience__card {
+    @apply flex flex-col border bg-neutral-200/10 dark:bg-neutral-950/10 border-neutral-200 dark:border-neutral-700 rounded-md px-4 py-4;
+  }
+
+  .experience__card__header {
+    @apply flex flex-col md:items-center md:justify-between md:flex-row;
+  }
+
+  .experience__company {
+    @apply flex gap-2 text-lg font-semibold dark:text-neutral-500;
+  }
+
+  .experience__date {
+    @apply text-sm;
+  }
+
+  .experience__body {
+    @apply mt-1;
+  }
+
+  .experience__role {
+    @apply font-bold;
+  }
+
+  .experience__details {
+    @apply font-light text-neutral-600 text-sm mt-2 list-disc px-6 space-y-1;
+  }
+
+  .toggle-circle {
+    @apply transform transition-transform duration-200;
+  }
+
+  .dark .toggle-circle {
+    @apply translate-x-4;
+  }
+
+  strong {
+    @apply text-neutral-600;
+  }
+
+  .navbar-right {
+    @apply flex items-center gap-6;
+  }
+}
+
+.hand-emoji {
+  display: inline-block;
+  font-size: 2rem;
+}
+
+@keyframes shake {
+  0%, 100% { 
+    transform: translateX(0) rotate(0deg); 
+  }
+  10% { 
+    transform: translateX(-5px) rotate(-5deg); 
+  }
+  20% { 
+    transform: translateX(5px) rotate(5deg); 
+  }
+  30% { 
+    transform: translateX(-5px) rotate(-3deg); 
+  }
+  40% { 
+    transform: translateX(5px) rotate(3deg); 
+  }
+  50% { 
+    transform: translateX(-3px) rotate(-2deg); 
+  }
+  60% { 
+    transform: translateX(3px) rotate(2deg); 
+  }
+  70% { 
+    transform: translateX(-3px) rotate(-1deg); 
+  }
+  80% { 
+    transform: translateX(3px) rotate(1deg); 
+  }
+  90% { 
+    transform: translateX(-2px) rotate(-0.5deg); 
+  }
+}
+
+.hand-emoji {
+  display: inline-block;
+  animation: shake 1.2s ease-in-out;
+  animation-delay: 0.3s;
+}
