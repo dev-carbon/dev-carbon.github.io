@@ -25,7 +25,7 @@
   }
 
   .section__content {
-    @apply flex flex-col gap-6 ps-6 pe-6 w-full mt-12 text-base;
+    @apply flex flex-col gap-6 ps-4 md:ps-6 pe-6 w-full mt-12 text-base;
   }
 
   .section__grid {
