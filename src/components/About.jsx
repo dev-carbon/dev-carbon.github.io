@@ -16,7 +16,7 @@ const About = () => {
   return (
     <div className="max-w-6xl mx-auto flex flex-col md:items-end gap-8 px-12 py-16">
       <h1 className="font-light text-2xl lg:text-4xl my-4">
-        Salut!
+        Salut!&nbsp;
         <span
           ref={emojiRef}
           className="hand-emoji inline-block"
@@ -43,7 +43,7 @@ const About = () => {
           Télécharger mon CV
         </a>
 
-        <h3 className="my-2">
+        <h3 className="my-2 text-xl">
           Prendre contact 🚀
           <a
             href="mailto:hugues.tchouala42@gmail.com"
