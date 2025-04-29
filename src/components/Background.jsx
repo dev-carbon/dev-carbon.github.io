@@ -12,10 +12,7 @@ const Background = () => {
 
         <p>
           En <strong>2019, j'ai rejoint l'école 42</strong>, où j'ai posé les
-          bases de mes connaissances en développement. Cependant, fidèle à ma
-          nature <strong>autodidacte</strong>, j'ai choisi de poursuivre mon
-          apprentissage en toute autonomie, guidé par ma{" "}
-          <strong>curiosité</strong> et ma soif de découverte.
+          bases de mes connaissances en développement.
         </p>
 
         <p>
